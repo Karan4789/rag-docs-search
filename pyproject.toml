@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "chromadb>=1.1.0",
+    "docling>=2.108.0",
     "docx2txt>=0.9",
     "fastapi>=0.116.2",
     "flashrank>=0.2.10",
@@ -14,6 +15,7 @@ dependencies = [
     "langchain-classic>=1.0.8",
     "langchain-cohere>=0.4.6",
     "langchain-community>=0.3.29",
+    "langchain-docling>=2.0.0",
     "langchain-groq>=0.3.8",
     "langchain-ollama>=0.3.8",
     "langchain-openai>=0.3.33",
