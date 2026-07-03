@@ -1,11 +1,17 @@
-from langchain_ollama import OllamaEmbeddings
+from src.ingestion.loaders.docling_loader import load_docling
 
-embeddings = OllamaEmbeddings(
-    model="embeddinggemma:300m",
-    base_url="http://localhost:11434"
-)
+docs = load_docling("data/Book.pdf")
 
-result = embeddings.embed_query("hello world")
+print("Documents:", len(docs))
 
-print(len(result))
-print(result[:5])
+print()
+
+print("Metadata")
+
+print(docs[0].metadata)
+
+print()
+
+print("Content")
+
+print(docs[0].page_content[:1500])

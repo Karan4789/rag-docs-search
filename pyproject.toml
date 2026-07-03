@@ -10,6 +10,7 @@ dependencies = [
     "docx2txt>=0.9",
     "fastapi>=0.116.2",
     "flashrank>=0.2.10",
+    "hf-xet>=1.1.10",
     "langchain>=0.3.27",
     "langchain-chroma>=0.2.6",
     "langchain-classic>=1.0.8",
