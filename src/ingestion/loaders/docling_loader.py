@@ -9,7 +9,7 @@ from docling.document_converter import (
     DocumentConverter,
     PdfFormatOption
 )
-
+# from docling.backend.docling_parse_v2_backend import DoclingParseDocumentBackend
 
 def load_docling(file_path):
         """
@@ -31,6 +31,8 @@ def load_docling(file_path):
 
         pipeline_options = PdfPipelineOptions()
         pipeline_options.allow_external_plugins = True
+        pipeline_options.do_ocr = False
+        pipeline_options.do_table_structure = False
 
         converter = DocumentConverter(
         format_options={
